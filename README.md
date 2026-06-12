@@ -1,21 +1,21 @@
-# Hand Gesture Controlled Car Transmitter
+# Hand Gesture Controlled Wheel Chair
 
-This repository contains the Arduino code for a hand gesture-controlled remote control (RC) car transmitter. It utilizes motion and gesture sensors to translate your hand movements into directional commands, which are then transmitted wirelessly to an RC car.
+This repository contains the Arduino code for a hand gesture-controlled WheelChair transmitter. It utilizes motion and gesture sensors to translate your hand movements into directional commands, which are then transmitted wirelessly to a wheel chair.
 
 The project currently explores two different methods of gesture control:
-1. **Tilt-Based Control (Primary):** Uses an MPU6050 Accelerometer/Gyroscope to measure hand tilt to drive the car and control its speed.
+1. **Tilt-Based Control (Primary):** Uses an MPU6050 Accelerometer/Gyroscope to measure hand tilt to drive the wheelchair and control its speed.
 2. **Swipe-Based Gesture Control (Experimental):** Uses an APDS-9960 optical gesture sensor to detect directional hand swipes.
 
 ## Features
 
 - **Wireless Communication:** Uses the nRF24L01 transceiver module for reliable wireless control.
-- **Proportional Speed Control:** When using the MPU6050, the tilt angle determines not just the direction, but also the speed of the car (5 speed levels).
-- **Transmission Enable/Disable Switch:** Includes a hardware toggle button to pause sending commands so you can move your hand freely without the car reacting.
+- **Proportional Speed Control:** When using the MPU6050, the tilt angle determines not just the direction, but also the speed of the wheelchair (5 speed levels).
+- **Transmission Enable/Disable Switch:** Includes a hardware toggle button to pause sending commands so you can move your hand freely without the wheelchair reacting.
 - **LED Indicator:** Provides visual feedback when the transmitter is actively sending data.
 
 ## Hardware Requirements
 
-- Arduino Board (e.g., Arduino Nano or Uno)
+- Arduino Board (e.g., Arduino Nano & Uno)
 - MPU6050 Accelerometer & Gyroscope Module
 - APDS-9960 RGB and Gesture Sensor (for the swipe-gesture version)
 - nRF24L01 Wireless Transceiver Module
